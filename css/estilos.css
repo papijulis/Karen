@@ -164,15 +164,12 @@ img { display: block; max-width: 100%; height: auto; -webkit-user-drag: none; -w
 .cierre { font-size: 1.5rem; }
 
 /* ---- la burbuja de su mensaje ---- */
-.chat { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .burbuja {
   align-self: flex-start; display: inline-flex; align-items: flex-end; gap: 12px;
-  padding: 11px 14px 9px 16px; border-radius: 6px 20px 20px 20px;
+  padding: 11px 18px 11px 16px; border-radius: 6px 20px 20px 20px;
   background: #22252B; color: #F3F4F6; box-shadow: var(--sombra-suave);
   font-size: 1.14rem; line-height: 1.25;
 }
-.burbuja time { font-size: .7rem; color: #9AA0A8; white-space: nowrap; transform: translateY(2px); }
-.sticker { width: 96px; height: 96px; margin-left: 6px; }
 
 /* ---- mi respuesta ---- */
 .respuesta { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding-left: 4px; }
@@ -195,7 +192,9 @@ img { display: block; max-width: 100%; height: auto; -webkit-user-drag: none; -w
 .gif-rosa { width: min(56vw, 232px); filter: drop-shadow(0 16px 22px rgba(var(--vino-rgb), .18)); }
 .lamina.activa .gif-rosa { animation: aparecer .7s var(--ease-suave) .33s both, mecer 3.6s ease-in-out 1.1s infinite alternate; }
 @keyframes mecer { from { transform: rotate(-4deg) translateY(0); } to { transform: rotate(4deg) translateY(-6px); } }
-.gif-corazon { width: min(68vw, 280px); }
+.flor { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: clamp(18px, 4dvh, 40px); }
+.gif-flor { width: min(66vw, 270px); }
+.flor figcaption { font-family: var(--fuente-intima); font-style: italic; font-size: .86rem; letter-spacing: .02em; color: var(--vino-700); opacity: .7; }
 .gif-besito { width: min(54vw, 220px); }
 
 /* ---- botones ---- */
@@ -245,9 +244,9 @@ img { display: block; max-width: 100%; height: auto; -webkit-user-drag: none; -w
 @media (max-height: 720px) {
   .lamina { padding-top: calc(var(--seguro-arriba) + 46px); padding-bottom: calc(var(--seguro-abajo) + 18px); }
   .contenido { gap: 14px; }
-  .gif-rosa { width: 150px; } .gif-corazon { width: 200px; } .gif-besito { width: 130px; }
+  .gif-rosa { width: 150px; } .gif-flor { width: 170px; } .flor { margin-bottom: 4px; } .gif-besito { width: 130px; }
   .titulo-hero { font-size: 2.4rem; } .titulo-dato { font-size: 3rem; } .titulo-dato.chico { font-size: 2.2rem; }
-  .icono { width: 38px; height: 38px; } .sticker { width: 64px; height: 64px; }
+  .icono { width: 38px; height: 38px; }
   .tarjeta { padding: 12px 15px; } .tarjeta-dato { font-size: 2rem; } .tarjeta-texto.grande { font-size: 1.05rem; }
   .titulo-final { font-size: 1.8rem; } .cierre { font-size: 1.25rem; }
 }

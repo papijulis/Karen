@@ -176,7 +176,7 @@
   }
 
   // precarga los GIFs para que cada lámina entre ya animada
-  ['corazon.webp', 'besito.webp', 'sticker.png'].forEach(n => { const i = new Image(); i.src = `assets/gifs/${n}`; });
+  ['flor.webp', 'besito.webp'].forEach(n => { const i = new Image(); i.src = `assets/gifs/${n}`; });
 
   pintarProgreso();
 })();
