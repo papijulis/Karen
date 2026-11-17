@@ -61,7 +61,7 @@ img { display: block; max-width: 100%; height: auto; -webkit-user-drag: none; -w
 
 /* ---- el lienzo: pantalla completa en móvil, "teléfono" en escritorio ---- */
 .telefono {
-  position: relative; width: 100%; height: 100dvh; overflow: hidden; isolation: isolate;
+  position: relative; width: 100%; height: 100vh; height: 100dvh; overflow: hidden; isolation: isolate;
   background:
     radial-gradient(120% 60% at 50% -10%, var(--rubor-200) 0%, transparent 60%),
     radial-gradient(90% 50% at 100% 105%, #FFE3D6 0%, transparent 65%),
@@ -161,9 +161,6 @@ img { display: block; max-width: 100%; height: auto; -webkit-user-drag: none; -w
 .texto-principal { font-size: 1.12rem; line-height: 1.45; font-weight: 500; color: var(--vino-900); text-wrap: pretty; }
 .texto-intimo { font-family: var(--fuente-intima); font-style: italic; font-size: 1.28rem; line-height: 1.4; color: var(--carmin-500); text-wrap: balance; }
 .titulo-final { font-family: var(--fuente-display); font-weight: 600; font-size: clamp(2rem, 8.6vw, 2.4rem); line-height: 1.08; text-wrap: balance; max-width: 13ch; }
-.grito { font-family: var(--fuente-intima); font-style: italic; font-weight: 700; font-size: 2.3rem; color: var(--carmin-500); line-height: 1; }
-.lamina.activa .grito { animation: brincar .9s var(--ease-rebote) .25s both; }
-@keyframes brincar { 0% { opacity: 0; transform: scale(.4) rotate(-8deg); } 100% { opacity: 1; transform: scale(1) rotate(-3deg); } }
 .cierre { font-size: 1.5rem; }
 
 /* ---- la burbuja de su mensaje ---- */
@@ -252,7 +249,7 @@ img { display: block; max-width: 100%; height: auto; -webkit-user-drag: none; -w
   .titulo-hero { font-size: 2.4rem; } .titulo-dato { font-size: 3rem; } .titulo-dato.chico { font-size: 2.2rem; }
   .icono { width: 38px; height: 38px; } .sticker { width: 64px; height: 64px; }
   .tarjeta { padding: 12px 15px; } .tarjeta-dato { font-size: 2rem; } .tarjeta-texto.grande { font-size: 1.05rem; }
-  .grito { font-size: 1.8rem; } .titulo-final { font-size: 1.8rem; } .cierre { font-size: 1.25rem; }
+  .titulo-final { font-size: 1.8rem; } .cierre { font-size: 1.25rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
